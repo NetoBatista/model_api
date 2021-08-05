@@ -24,7 +24,7 @@ namespace ModelAPI
                     {
                         await Log(context, exceptionHandler);
                     }
-                    await context.Response.WriteAsync(JsonConvert.SerializeObject(MontarErroGenerico()));
+                    await context.Response.WriteAsync(JsonConvert.SerializeObject(GenericError()));
                 });
             });
         }
@@ -35,7 +35,7 @@ namespace ModelAPI
             //log
         }
 
-        private static ResponseAPI MontarErroGenerico()
+        private static ResponseAPI GenericError()
         {
             return new ResponseAPI { Message = "An error has occurred on the server. Please contact the administrator."};
         }
