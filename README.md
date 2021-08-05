@@ -1,5 +1,5 @@
 # ModelAPI
- É uma API modelo para criação de outras API'S utilizando conceito DDD (Domain Driven Design)
+ É um modelo para criação de outras API'S utilizando conceito DDD (Domain Driven Design)
 
  É dividido nos seguintes módulos:
   - API
