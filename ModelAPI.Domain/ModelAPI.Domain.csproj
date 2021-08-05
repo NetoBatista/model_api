@@ -17,12 +17,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="mercadopago-sdk" Version="2.0.0" />
     <PackageReference Include="Microsoft.NETCore.Targets" Version="3.0.0" PrivateAssets="all" />
-    <PackageReference Include="AWSSDK.S3" Version="3.5.0.7" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.2" />
-    <PackageReference Include="DinkToPdf" Version="1.0.8" />
-    <PackageReference Include="MongoDB.Driver" Version="2.12.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.4" />
     <PackageReference Include="ClosedXML" Version="0.95.4" />
   </ItemGroup>
