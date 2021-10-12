@@ -19,7 +19,7 @@ namespace ModelAPI.Service.Services
 
         public async Task<ResponseAPI> HelloWorld()
         {
-            var response = await _unitOfWork.ModelRepository.HelloWorld();
+            var response = await _unitOfWork.HelloWorldRepository.HelloWorld();
             return new ResponseAPI
             {
                 Object = response

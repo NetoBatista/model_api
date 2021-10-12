@@ -6,7 +6,7 @@ namespace ModelAPI.Domain.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {
-        IHelloWorldRepository ModelRepository { get; }
+        IHelloWorldRepository HelloWorldRepository { get; }
         IAuthRepository AuthRepository { get; }
     }
 }

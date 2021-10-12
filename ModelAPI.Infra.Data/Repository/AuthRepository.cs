@@ -27,8 +27,7 @@ namespace ModelAPI.Infra.Data.Repository
 
         private string CreateToken(ClaimsIdentity identity , SigningConfigurations signingConfigurations , TokenConfig tokenConfig)
         {
-            DateTime dataCriacao = DateTime.Now;
-            DateTime dataExpiracao = dataCriacao + TimeSpan.FromSeconds(tokenConfig.Seconds);
+            DateTime expiration = DateTime.Now + TimeSpan.FromSeconds(tokenConfig.Seconds);
 
             var handler = new JwtSecurityTokenHandler();
             var securityToken = handler.CreateToken(new SecurityTokenDescriptor
@@ -37,8 +36,8 @@ namespace ModelAPI.Infra.Data.Repository
                 Audience = tokenConfig.Audience,
                 SigningCredentials = signingConfigurations.SigningCredentials,
                 Subject = identity,
-                NotBefore = dataCriacao,
-                Expires = dataExpiracao
+                NotBefore = DateTime.Now,
+                Expires = expiration
             });
 
             var tokenRetorno = handler.WriteToken(securityToken);

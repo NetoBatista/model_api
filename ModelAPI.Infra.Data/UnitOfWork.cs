@@ -8,7 +8,7 @@ namespace ModelAPI.Infra.Data
     public class UnitOfWork : IUnitOfWork
     {
 
-        private IHelloWorldRepository _modelRepository;
+        private IHelloWorldRepository _helloWorldRepository;
         private IAuthRepository _authRepository;
 
         public UnitOfWork(IConfiguration configuration)
@@ -19,7 +19,7 @@ namespace ModelAPI.Infra.Data
         {
         }
 
-        public IHelloWorldRepository ModelRepository => _modelRepository ?? new HelloWorldRepository(this);
+        public IHelloWorldRepository HelloWorldRepository => _helloWorldRepository ?? new HelloWorldRepository(this);
         public IAuthRepository AuthRepository => _authRepository ?? new AuthRepository(this);
     }
 }
