@@ -7,6 +7,10 @@
   - Infra.data
   - Service
 
+## Framework
+
+Foi utilizado .net 5.0 na criação desse modelo
+
 ## API
 
  É onde encontra-se os modelos de configuração e execução da API. 
