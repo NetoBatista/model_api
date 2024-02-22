@@ -1,15 +1,13 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Configuration;
-using Model.Domain.Interfaces.Repository;
+﻿using Model.Domain.Interfaces.Repository;
 using Model.Domain.Interfaces.Service;
-using Model.Services;
 using Model.Infra.Repository;
+using Model.Services;
 
 namespace Model.API.Extension
 {
     public static class InjectionServicesExtension
     {
-       public static void InjectServices(this IServiceCollection services, IConfiguration configuration)
+        public static void InjectServices(this IServiceCollection services, IConfiguration configuration)
         {
             InjectServices(services);
             InjectRepository(services);

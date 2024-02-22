@@ -4,7 +4,6 @@ namespace Model.Infra.Repository
 {
     public abstract class BaseRepository : IBaseRepository
     {
-
         public BaseRepository()
         {
         }

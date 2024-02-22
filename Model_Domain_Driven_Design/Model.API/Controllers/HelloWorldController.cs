@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using Model.Domain.Interfaces.Service;
-using System.Threading.Tasks;
 
 namespace Model.API.Controllers
 {
@@ -19,11 +17,14 @@ namespace Model.API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<string>> Get()
+        public ActionResult<string> Get()
         {
             _logger.LogInformation("Running Method HelloWorld.Get");
             var response = _helloWorldService.Execute();
-
+            if (string.IsNullOrEmpty(response))
+            {
+                return NoContent();
+            }
             return Ok(response);
         }
     }

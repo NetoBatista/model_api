@@ -1,12 +1,4 @@
 using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Model.API
 {
@@ -17,7 +9,8 @@ namespace Model.API
             CreateWebHostBuilder(args).Build().Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) {
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args)
+        {
             var webHost = WebHost.CreateDefaultBuilder(args);
             webHost.UseStartup<Startup>();
             webHost.ConfigureAppConfiguration(webBuilder =>

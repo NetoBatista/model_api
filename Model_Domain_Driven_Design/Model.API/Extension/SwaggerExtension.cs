@@ -1,8 +1,4 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.OpenApi.Models;
-using System.IO;
-using System.Linq;
+﻿using Microsoft.OpenApi.Models;
 using System.Reflection;
 
 namespace Model.API.Extension
