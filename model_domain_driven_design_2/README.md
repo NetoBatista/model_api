@@ -30,6 +30,7 @@
 
   Responsible for business rules and validations before persisting data in the database or consuming external APIs
 
+#
 
 ### ModelAPI
  É um modelo para criação de outras API'S utilizando conceito DDD (Domain Driven Design)
