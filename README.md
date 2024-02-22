@@ -1,5 +1,15 @@
-# Sobre o repositório
- Esse repositório foi criado com o intuito de falicitar criacao de APIS com c#
+### About the repository
+  This repository was created with the aim of facilitating the creation of APIs with C#
 
- - Model_Domain_Driven_Design (DDD)
- - Clean_Code_API
+  - Model Domain Driven Design (DDD)
+  - Model Minimal api
+  - Model UseCase
+
+#
+
+### Sobre o repositório
+ Esse repositório foi criado com o intuito de falicitar criação de APIS com c#
+
+ - Model Domain Driven Design (DDD)
+ - Model Minimal api
+ - Model UseCase

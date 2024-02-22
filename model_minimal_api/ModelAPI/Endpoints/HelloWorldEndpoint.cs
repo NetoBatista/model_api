@@ -1,6 +1,5 @@
 ﻿using Application.Contracts;
 using Application.Services;
-using Microsoft.AspNetCore.Mvc;
 
 namespace ModelAPI.Endpoints
 {
