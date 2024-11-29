@@ -4,6 +4,7 @@
   - Model Domain Driven Design (DDD)
   - Model Minimal api
   - Model UseCase
+  - Model Handler (Mediator)
 
 #
 
@@ -13,3 +14,4 @@
  - Model Domain Driven Design (DDD)
  - Model Minimal api
  - Model UseCase
+ - Model Handler (Mediator)
