@@ -43,7 +43,7 @@ In short, what we are going to do is simply receive a command and tell the Media
 - Data: performs persistence with the database, whether or not using an ORM.
 - Cross-Cutting: a separate layer that does not follow the layer hierarchy. As the name suggests, this layer crosses the entire hierarchy. Contains functionalities that can be used in any part of the code, consumption of external API and use of some security.
 
-### Service
+### Handler
 
   Responsible for business rules and validations before persisting data in the database or consuming external APIs
 
@@ -94,6 +94,6 @@ Foi utilizado .net 8.0 na criação desse modelo
 - Data: realiza a persistência com o banco de dados, utilizando, ou não, algum ORM.
 - Cross-Cutting: uma camada a parte que não obedece a hierarquia de camada. Como o próprio nome diz, essa camada cruza toda a hierarquia. Contém as funcionalidades que pode ser utilizada em qualquer parte do código, consumo de API externa e utilização de alguma segurança.
 
-### Service
+### Handler
 
  É responsável pelas regras de negócios e validações antes de persistir os dados no banco de dados ou consumir API externas
